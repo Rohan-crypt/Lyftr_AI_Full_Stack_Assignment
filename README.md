@@ -6,9 +6,10 @@ Production-grade full-stack LLM chatbot system featuring automated key failover 
 
 ## 1. Live URLs
 
-- **Frontend Application:** [https://lyftr-ai-fullstack-assignment.vercel.app](https://lyftr-ai-fullstack-assignment.vercel.app) *(or live deployment link)*
-- **Backend API Base URL:** [https://lyftr-ai-backend.onrender.com](https://lyftr-ai-backend.onrender.com) *(or live deployment link)*
+- **Live Frontend (GitHub Pages):** [https://rohan-crypt.github.io/Lyftr_AI_Full_Stack_Assignment/](https://rohan-crypt.github.io/Lyftr_AI_Full_Stack_Assignment/)
 - **Public GitHub Repository:** [https://github.com/Rohan-crypt/Lyftr_AI_Full_Stack_Assignment](https://github.com/Rohan-crypt/Lyftr_AI_Full_Stack_Assignment)
+- **One-Click Render Deployment (Backend & Frontend):** Connect [GitHub Repo](https://github.com/Rohan-crypt/Lyftr_AI_Full_Stack_Assignment) to Render via the included `render.yaml` Blueprint or deploy via Docker.
+- **Vercel Frontend Deployment:** Ready with included `vercel.json` and zero-config Vite setup.
 
 ---
 
@@ -53,7 +54,7 @@ pip install -r requirements.txt
 # Set environment variables (or copy .env.example)
 export LLM_API_KEYS="your_key_1,your_key_2"
 export DATABASE_URL="sqlite:///./data/app.db"
-export ALLOWED_ORIGINS="http://localhost:3000,http://127.0.0.1:3000"
+export ALLOWED_ORIGINS="http://localhost:3000,http://127.0.0.1:3000,*"
 export ENABLE_FAILURE_SIMULATION="true"
 
 # Start FastAPI server
