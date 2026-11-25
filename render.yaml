@@ -15,10 +15,6 @@ services:
         value: "*"
       - key: LLM_API_KEYS
         sync: false
-    disk:
-      name: sqlite-data
-      mountPath: /app/backend/data
-      sizeGB: 1
 
   - type: web
     name: lyftr-frontend
