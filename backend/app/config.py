@@ -32,7 +32,7 @@ ALLOWED_ORIGINS = [o.strip() for o in raw_origins.split(",") if o.strip()]
 ENABLE_FAILURE_SIMULATION = os.getenv("ENABLE_FAILURE_SIMULATION", "false").lower() in ("true", "1", "yes")
 
 # Default model
-DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "gemini/gemini-2.0-flash")
+DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "gemini/gemini-flash-lite-latest")
 
 # Default system prompt
 DEFAULT_SYSTEM_PROMPT = os.getenv("DEFAULT_SYSTEM_PROMPT", "You are a helpful and concise AI assistant.")
