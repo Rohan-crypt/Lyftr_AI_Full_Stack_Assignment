@@ -1,7 +1,8 @@
 import os
 
-# Database URL
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./data/app.db")
+# Database URL (use writable /tmp/app.db on Vercel serverless if not overridden)
+_default_db = "sqlite:////tmp/app.db" if os.getenv("VERCEL") else "sqlite:///./data/app.db"
+DATABASE_URL = os.getenv("DATABASE_URL", _default_db)
 
 # Parse SQLite file path from URL
 def get_db_path(url: str) -> str:
