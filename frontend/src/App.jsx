@@ -6,9 +6,11 @@ function generateSessionId() {
   return 's-' + Math.random().toString(36).substring(2, 8);
 }
 
-// Backend base URL: default to current origin, VITE_BACKEND_URL, or localhost:8000
+// Backend base URL: default to VITE_BACKEND_URL, localhost:8000 locally, or live Vercel backend
 const DEFAULT_BACKEND_URL = import.meta.env.VITE_BACKEND_URL || (
-  window.location.hostname === 'localhost' ? 'http://localhost:8000' : ''
+  window.location.hostname === 'localhost'
+    ? 'http://localhost:8000'
+    : 'https://lyftr-ai-backend-ten.vercel.app'
 );
 
 export default function App() {

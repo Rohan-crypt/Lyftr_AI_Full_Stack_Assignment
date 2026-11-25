@@ -7,9 +7,8 @@ Production-grade full-stack LLM chatbot system featuring automated key failover 
 ## 1. Live URLs
 
 - **Live Frontend (GitHub Pages):** [https://rohan-crypt.github.io/Lyftr_AI_Full_Stack_Assignment/](https://rohan-crypt.github.io/Lyftr_AI_Full_Stack_Assignment/)
+- **Live Backend API Base URL (Vercel):** [https://lyftr-ai-backend-ten.vercel.app](https://lyftr-ai-backend-ten.vercel.app)
 - **Public GitHub Repository:** [https://github.com/Rohan-crypt/Lyftr_AI_Full_Stack_Assignment](https://github.com/Rohan-crypt/Lyftr_AI_Full_Stack_Assignment)
-- **One-Click Render Deployment (Backend & Frontend):** Connect [GitHub Repo](https://github.com/Rohan-crypt/Lyftr_AI_Full_Stack_Assignment) to Render via the included `render.yaml` Blueprint or deploy via Docker.
-- **Vercel Frontend Deployment:** Ready with included `vercel.json` and zero-config Vite setup.
 
 ---
 
